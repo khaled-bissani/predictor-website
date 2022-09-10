@@ -21,6 +21,8 @@ function generateAllValues() {
     var urlGender = 'https://api.genderize.io?name=' + nameField;
     // Declare age's url
     var urlAge = 'https://api.agify.io/?name=' + nameField
+    // Declare nationality's url
+    var urlNationality = 'https://api.nationalize.io/?name=' + nameField
 
     if (nameField == 0) {
         console.log('error');
@@ -38,9 +40,14 @@ function generateAllValues() {
 		.then(data => {
 			newAge.innerHTML = `<p>${data.age}</p> `
 		});
+        // Fetch nationality
+        fetch(urlNationality)
+		.then(res => res.json())
+		.then(data => {
+			newNationality.innerHTML = `<p>${data.country[0].country_id}, ${data.country[1].country_id}</p> `
+    });
     }
 }
-
 // Random dog image when reloading the website
 function showDogImage() {
     fetch('https://dog.ceo/api/breeds/image/random')
