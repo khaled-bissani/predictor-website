@@ -84,6 +84,19 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-around;
+    width: 20%;
+}
+
+.name-field > input {
+    font-size: 18px;
+    font-family: badScriptRegular;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 10px;
+    background: #ffff;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+    outline: none;
 }
 
     /* gender */
