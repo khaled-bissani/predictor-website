@@ -9,14 +9,68 @@
         <link rel="icon" href="images/logo.png" type="images/icon type"> <!--Adding icon to the tittle bar-->
     </head>
     <body>
+        <!-- Start heading section -->
         <div class="heading">
             <h1>The Predictor</h1>
         </div>
+        <!-- End heading section -->
+        <!-- Start description section -->
         <div class="description">
             <p>Welcome to the Predictor</p>
             <p>Enter your name to generate your gender, age and nationality.</p>
         </div>
-
+        <!-- End description section -->
+        <div class="image">
+            <p>Random Dog Placeholder</p>
+        </div>
+        <!-- Start generator section -->
+        <div class="generator-section">
+            <div class="name-field">
+                <div>
+                    <label>Name:</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter your name"/>
+                </div>
+            </div>
+            <div class="gender">
+                <div>
+                    <label>Your gender:</label>
+                    <div class="gender-image">
+                        <img src="images/gender.PNG"/>
+                    </div>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="age">
+                <div>
+                    <label>Your age:</label>
+                    <div class="age-image">
+                        <img src="images/age.PNG"/>
+                    </div>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="nationality">
+                <div>
+                    <label>Your nationality:</label>
+                    <div class="nationality-image">
+                        <img src="images/nationality.PNG"/>
+                    </div>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button id="generate-btn">Generate</button>
+        </div>
+        <!-- End generator section -->
         <script src="scripts/scripts.js"></script>
     </body>
 </html>
