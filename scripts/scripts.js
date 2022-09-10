@@ -1,5 +1,6 @@
 // Declare the generate button
 const generateBtn = document.getElementById('generate-btn');
+
 // Declare all the placeholders
 const dogPicture = document.getElementById('dog-picture');
 const newGender = document.getElementById('gender-id');
@@ -8,6 +9,10 @@ const newNationality = document.getElementById('nationality-id');
 
 // Generate button event
 generateBtn.addEventListener('click', generateAllValues);
+
+// Call the function that show the dog image when refreshing the page
+showDogImage();
+
 // Generate values function
 function generateAllValues() {
     // Declare the value of the text input
@@ -34,6 +39,13 @@ function generateAllValues() {
 			newAge.innerHTML = `<p>${data.age}</p> `
 		});
     }
-        
+}
 
+// Random dog image when reloading the website
+function showDogImage() {
+    fetch('https://dog.ceo/api/breeds/image/random')
+        .then(res => res.json())
+        .then(data => {
+            dogPicture.innerHTML = `<img src=${data.message} alt="dog"/>`
+        });
 }
