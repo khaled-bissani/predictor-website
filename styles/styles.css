@@ -66,6 +66,128 @@ body {
 	width: 100%;
 }
 
+/* Generator */
+
+.generator-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.generator-section label {
+    font-size: 20px;
+    font-family: badScriptRegular;  
+}
+
+    /* name */
+
+.name-field {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+    /* gender */
+
+.gender-section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 10%;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-image {
+    width: 20%;
+}
+
+.gender-image > img {
+    width: 100%;
+}
+
+.gender-section p {
+    text-align: center;
+    font-size: 18px;
+    font-family: badScriptRegular;
+    width: 100%;
+    margin-top: 10px;
+    background: #ffff;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+}
+
+    /* age */
+
+.age-section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 10%;
+}
+
+.age {
+    display: flex;
+    justify-content: space-between;
+}
+
+.age-image {
+    width: 20%;
+    margin-left: 14%;
+}
+
+.age-image > img {
+    width: 100%;
+}
+
+.age-section p {
+    text-align: center;
+    font-size: 18px;
+    font-family: badScriptRegular;
+    width: 100%;
+    margin-top: 10px;
+    background: #ffff;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+}
+
+    /* nationality */
+
+.nationality-section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 20%;
+    
+}
+
+.nationality {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nationality-image {
+    width: 10%;
+    margin-left: 10%;
+}
+
+.nationality-image > img {
+    width: 100%;
+}
+
+.nationality-section p {
+    text-align: center;
+    font-size: 18px;
+    font-family: badScriptRegular;
+    width: 100%;
+    margin-top: 10px;
+    background: #ffff;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+}
+
 /* Utilities */
 
 @font-face {
