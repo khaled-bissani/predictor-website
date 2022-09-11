@@ -26,8 +26,12 @@ function generateAllValues() {
 
     if (nameField == 0) {
         console.log('error');
+        // Turn red if there no name in the text field
+        document.getElementById('name').style.borderColor = 'red';
     }
     else {
+        // Return to normal with a name in the text field
+        document.getElementById('name').style.borderColor = '#CDCACA';
         // Fetch gender
         fetch(urlGender)
         .then(res => res.json())
