@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Predictor</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" href="images/logo.png" type="images/icon type"> <!--Adding icon to the tittle bar-->
+    </head>
+    <body>
+        <!-- Start heading section -->
+        <div class="heading">
+            <h1>The Predictor</h1>
+        </div>
+        <!-- End heading section -->
+        <!-- Start description section -->
+        <div class="description">
+            <p>Welcome to the Predictor</p>
+            <p>Enter your name to generate your gender, age and nationality.</p>
+        </div>
+        <!-- End description section -->
+        <!-- Start Image section -->
+        <div class="image-section">
+            <div id="dog-picture" class="image">
+                <p>Random Dog Placeholder</p>
+            </div>
+        </div>
+        <!-- End Image section -->
+        <!-- Start generator section -->
+        <div class="generator-section">
+            <div class="name-field">
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" class="text-field"/>
+            </div>
+            <div class="gender-section">
+                <div class="gender mobile">
+                    <label>Your gender:</label>
+                    <div class="gender-image mobile-images">
+                        <img src="images/gender.png"/>
+                    </div>
+                </div>
+                <div id="gender-id">
+                    <p></p>
+                </div>
+            </div>
+            <div class="age-section">
+                <div class="age mobile">
+                    <label>Your age:</label>
+                    <div class="age-image">
+                        <img src="images/age.png"/>
+                    </div>
+                </div>
+                <div id="age-id">
+                    <p></p>
+                </div>
+            </div>
+            <div class="nationality-section">
+                <div class="nationality mobile">
+                    <label>Your nationality:</label>
+                    <div class="nationality-image">
+                        <img src="images/nationality.png"/>
+                    </div>
+                </div>
+                <div id="nationality-id">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button id="generate-btn">Generate</button>
+        </div>
+        <!-- End generator section -->
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>
