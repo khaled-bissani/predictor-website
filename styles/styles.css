@@ -105,11 +105,6 @@ body {
     outline: none;
 }
 
-/* ::placeholder {
-    width: 100%;
-    font-size: 10px;
-} */
-
     /* gender */
 
 .gender-section {
@@ -292,6 +287,73 @@ button:active {
     font-family: badScriptRegular;
     src: url(../fonts/BadScript-Regular.ttf);
 }
+
+/* Login - Sign up page */
+
+.sign-up {
+    margin-top: 50px;
+}
+
+.sign-up > p {
+    text-align: center;
+    font-size: 26px;
+    font-family: badScriptRegular;
+    margin: 10px 0;
+
+}
+
+.signup-field {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.signup-field > input {
+    font-size: 18px;
+    font-family: badScriptRegular;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 20px;
+    background: #ffff;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+    outline: none;
+}
+/*  */
+.log-in {
+    margin-top: 50px;
+}
+
+.log-in > p {
+    text-align: center;
+    font-size: 26px;
+    font-family: badScriptRegular;
+    margin: 10px 0;
+
+}
+
+.login-field {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 20%;
+    margin-left: 40%;
+}
+
+.login-field > input {
+    font-size: 18px;
+    font-family: badScriptRegular;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 20px;
+    background: #ffff;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+    outline: none;
+}
+
 
 /* media query */
 
