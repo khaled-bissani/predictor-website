@@ -58,5 +58,6 @@ function showDogImage() {
         .then(res => res.json())
         .then(data => {
             dogPicture.innerHTML = `<img src=${data.message} alt="dog"/>`
+            dogPicture.style.width='100%'
         });
 }
