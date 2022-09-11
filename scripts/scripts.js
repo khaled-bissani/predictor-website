@@ -1,17 +1,23 @@
 // Declare the generate button
 const generateBtn = document.getElementById('generate-btn');
+const boredBtn = document.getElementById('bored-btn');
 
 // Declare all the placeholders
 const dogPicture = document.getElementById('dog-picture');
 const newGender = document.getElementById('gender-id');
 const newAge = document.getElementById('age-id');
 const newNationality = document.getElementById('nationality-id');
+const newBored = document.getElementById('bored-id');
+const ipAddress = document.getElementById('ip-address');
 
 // Generate button event
 generateBtn.addEventListener('click', generateAllValues);
+boredBtn.addEventListener('click', generateBoredActivity);
 
 // Call the function that show the dog image when refreshing the page
 showDogImage();
+// Call the function that give the Ip address
+getIpClient();
 
 // Generate values function
 function generateAllValues() {
@@ -52,6 +58,15 @@ function generateAllValues() {
     });
     }
 }
+
+function generateBoredActivity() {
+    fetch('https://www.boredapi.com/api/activity')
+        .then(res => res.json())
+        .then(data => {
+            newBored.innerHTML = `<p>${data.activity}</p> `
+        });
+}
+
 // Random dog image when reloading the website
 function showDogImage() {
     fetch('https://dog.ceo/api/breeds/image/random')
@@ -60,4 +75,13 @@ function showDogImage() {
             dogPicture.innerHTML = `<img src=${data.message} alt="dog"/>`
             dogPicture.style.width='100%'
         });
+}
+// Display the current Ip using axios
+async function getIpClient() {
+  try {
+    const response = await axios.get('https://api.ipify.org?format=json');
+    ipAddress.innerHTML = "Current IP Address is " + response.data.ip;
+  } catch (error) {
+    console.error(error);
+  }
 }
